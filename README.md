@@ -1,3 +1,5 @@
+![npm (scoped)](https://img.shields.io/npm/v/@gscrawley/string-lib?style=plastic)
+
 # String_Lib
 
 # Challenge 1 capitalize() - makes the first character of a given string uppercase.
