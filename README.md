@@ -1,4 +1,4 @@
-![npm bundle size](https://img.shields.io/bundlephobia/min/@gscrawley/string-lib)
+![npm (scoped)](https://img.shields.io/npm/v/@gscrawley/string-lib?style=plastic)
 
 # String_Lib
 
