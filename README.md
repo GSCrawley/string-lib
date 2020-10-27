@@ -14,7 +14,7 @@ Strategy: Make a new function that uses str.toUpperCase(). You can make an alias
 makes the first character of each word uppercase. Imagine that each word is separated by a space. Example: do all the things -> Do All The Things
 Advanced: capitalizeHeadline() - capitalizes all of the words except the words: the, in, a, an, and, but, for, at, by, from unless one of these words is the first word of the string! Example: the most foo in bar -> The Most Foo in Bar
 Strategies: Use str.split() and split on a ' ' space. Use your capitalize(), loop through all of the elements (you can use array.map() here) and use your capitalize() function from challenge 1 on each element, last array.join() all of the elements into a single string. (advanced) Use a regular expression.
-##Challenge 4 removeExtraSpaces() - 
+## Challenge 4 removeExtraSpaces() - 
 Removes all spaces from the beginning and end of a String along with any extra spaces in the middle. If more than one space appears in the middle of a string it is replaced by a single space Example: " Hello world! " -> "Hello world!" Strategies: string.trim() will remove white space from the beginning and ending of a string. If you str.split() on the ' ' (space) you can trim each of these strings and then array.join() with a ' '.
 ## Challenge 5 kabobCase() - 
 Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
