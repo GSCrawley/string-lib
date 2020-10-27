@@ -1,3 +1,5 @@
+![npm bundle size](https://img.shields.io/bundlephobia/min/@gscrawley/string-lib)
+
 # String_Lib
 
 # Challenge 1 capitalize() - makes the first character of a given string uppercase.
