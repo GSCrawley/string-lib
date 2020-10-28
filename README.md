@@ -19,7 +19,7 @@ Removes all spaces from the beginning and end of a String along with any extra s
 ## Challenge 5 kabobCase() - 
 Removes extra spaces and replaces spaces with the hyphen "-", and makes all characters lowercase.
 Example: " Hello world " -> "hello-world" Advanced: Remove special characters from the string. For example: "Hello World!" -> "hello-world" (notice the ! is removed)
-Strategies: You need to remove all of the white space follow the challenge above. If you use str.split() you shopuld have an array of strings you use str.toLowerCase() and array.join() with a '-'. Advanced use str.replace() to remove special characters (~!@#$% etc.) from the string before joining.
+Strategies: You need to remove all of the white space follow the challenge above. If you use str.split() you should have an array of strings you use str.toLowerCase() and array.join() with a '-'. Advanced use str.replace() to remove special characters (~!@#$% etc.) from the string before joining.
 ## Challenge 6 snakeCase() - 
 Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase. Example: " what the heck " -> "what_the_heck"
 Strategies: Follow the kabobcase() example above and use the '_' in place of '-'.
