@@ -1,4 +1,4 @@
-![npm (scoped)](https://img.shields.io/npm/v/@gscrawley/string-lib?style=plastic)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/gscrawley/string_lib?style=plastic)
 
 ## String_Lib
 
