@@ -53,8 +53,8 @@ function camelCase(str) {
 // Challenge 8 shift() - this method will take the first character of a string 
 // and move to the end of a string:
 
-function shift() {
-
+function shift(str) {
+    return str.split(' ').map(e=>  e.substr(1,) +e[0]).join(' ')
 }
 
 console.log(capsFirstLtr('whats up'))
@@ -66,3 +66,5 @@ console.log(capsFirstLtr(removeExtraSpaces('  why are  there   so many  spaces  
 console.log(capsFirstLtr(kebabCase('  why are  there   so many  spaces     in  this sentence    ?')))
 console.log(snakeCase('  why are  there   so many  spaces     in  this sentence    ?'))
 console.log(camelCase('  why are  there   so many  spaces     in  this sentence    ?'))
+console.log(shift('it really is a beautiful day today'))
+console.log(capitalizeWords(shift('it really is a beautiful day today')))
