@@ -16,7 +16,5 @@
     "url": "https://github.com/GSCrawley/String_Lib/issues"
   },
   "homepage": "https://github.com/GSCrawley/String_Lib#readme",
-  "dependencies": {
-    "gid-string-lib": "^1.0.0"
-  }
+  "dependencies": {}
 }
