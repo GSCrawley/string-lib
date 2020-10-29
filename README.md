@@ -1,4 +1,4 @@
-![GitHub package.json version](https://img.shields.io/github/package-json/v/gscrawley/string_lib?style=plastic)
+![GitHub package.json version](https://img.shields.io/badge/version-1.2.0-brightgreen/style=plastic)
 
 ## String_Lib
 
