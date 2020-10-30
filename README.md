@@ -1,5 +1,7 @@
 ![GitHub package.json version](https://img.shields.io/badge/version-1.2.0-brightgreen/style=plastic)
 
+![tests](https://img.shields.io/static/v1?label=Testing&message=Jest&color=#ff69b4&style=plastic)
+
 ## String_Lib
 
 Challenge 1 capitalize() - 
