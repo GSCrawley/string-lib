@@ -72,8 +72,8 @@ module.exports.shift = shift
 
 // //here's two functions on the same string
 // console.log(capsFirstLtr(removeExtraSpaces('  why are  there   so many  spaces     in  this sentence    ?')))
-// console.log(capsFirstLtr(kebabCase('  why are  there   so many  spaces     in  this sentence    ?')))
-// console.log(snakeCase('  why are  there   so many  spaces     in  this sentence    ?'))
+// console.log(kebabCase('  why are  there   so many  spaces     in  this sentence    ?'))
+console.log(snakeCase('  why are  there   so many  spaces     in  this sentence    ?'))
 // console.log(camelCase('  why are  there   so many  spaces     in  this sentence    ?'))
 // console.log(shift('it really is a beautiful day today'))
 // console.log(capitalizeWords(shift('it really is a beautiful day today')))
