@@ -30,3 +30,6 @@ test('snakeCase', () => {
     expect(string_test.snakeCase('  why are  there   so many  spaces     in  this sentence    ?')).toBe('why_are_there_so_many_spaces_in_this_sentence')
 })
 
+test('camelCase', () => {
+    expect(string_test.camelCase('  why are  there   so many  spaces     in  this sentence    ?')).toBe('whyArethereSoManyspacesInthisSentence?')
+})
