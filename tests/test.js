@@ -33,3 +33,7 @@ test('snakeCase', () => {
 test('camelCase', () => {
     expect(string_test.camelCase('  why are  there   so many  spaces     in  this sentence    ?')).toBe('whyArethereSoManyspacesInthisSentence?')
 })
+
+test('shift', () => {
+    expect(string_test.shift('it really is a beautiful day today')).toBe('ti eallyr si a eautifulb ayd odayt')
+})
