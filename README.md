@@ -2,6 +2,8 @@
 
 ![tests](https://img.shields.io/static/v1?label=Testing&message=Jest&color=ff69b4&style=plastic)
 
+![tests](https://img.shields.io/badge/Jest-1.3.0-brightgreen/style=plastic)
+
 ## npm package can be found at: https://www.npmjs.com/package/@gscrawley/string-lib
 
 ## String_Lib
