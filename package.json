@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GSCrawley/String_Lib.git"
+    "url": "git+https://github.com/GSCrawley/string-lib.git"
   },
   "author": "gscrawley",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GSCrawley/String_Lib/issues"
+    "url": "https://github.com/GSCrawley/string-lib/issues"
   },
-  "homepage": "https://github.com/GSCrawley/String_Lib#readme",
+  "homepage": "https://github.com/GSCrawley/string-lib#readme",
   "dependencies": {
     "@gscrawley/string-lib": "^1.0.0"
   },

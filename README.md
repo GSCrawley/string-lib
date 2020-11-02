@@ -2,6 +2,8 @@
 
 ![tests](https://img.shields.io/static/v1?label=Testing&message=Jest&color=ff69b4&style=plastic)
 
+## All tests passing
+
 ## String_Lib
 
 Challenge 1 capitalize() - 
@@ -62,3 +64,4 @@ Writing unit tests
 
 Due
 Class 4 - April 8
+                                  
