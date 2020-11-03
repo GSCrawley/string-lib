@@ -1,24 +1,26 @@
 
 // challenge 1
-function capsFirstLtr(str) { 
+
+Object.prototype.capsFirstLtr = function(str) {
     return str.charAt(0).toUpperCase() + str.slice(1); 
-} 
+}
 
 // challenge 2
-function allCaps(str) { 
+
+Object.prototype.allCaps = function(str) {
     return str.toUpperCase(); 
-} 
+}
 
 // challenge 3
 // note: /\w\S*/g is a REGEX (regular expression).
 // the \s means "match whitespace" and the g is a flag which means "global", i.e. match all whitespace, not just the first.
 
-function capitalizeWords(str) {
-    return str.replace(/\w\S*/g,function(txt){
-        return txt.charAt(0).toUpperCase()+txt.substr(1).toLowerCase();
-    });
-    }
- 
+// function capitalizeWords(str) {
+//     return str.replace(/\w\S*/g,function(txt){
+//         return txt.charAt(0).toUpperCase()+txt.substr(1).toLowerCase();
+//     });
+//     }
+ Object.prototype.capitalizeWords =
 // challenge 4
 
 function removeExtraSpaces(str) {
