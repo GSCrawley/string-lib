@@ -66,14 +66,14 @@ module.exports.snakeCase = snakeCase
 module.exports.camelCase = camelCase
 module.exports.shift = shift
 
-// console.log(capsFirstLtr('whats up'))
-// console.log(allCaps('it really is a beautiful day today'))
-// console.log(capitalizeWords('now this is going to capitalize all words in the sentence'))
+console.log(capsFirstLtr('whats up'))
+console.log(allCaps('it really is a beautiful day today'))
+console.log(capitalizeWords('now this is going to capitalize all words in the sentence'))
 
-// //here's two functions on the same string
-// console.log(capsFirstLtr(removeExtraSpaces('  why are  there   so many  spaces     in  this sentence    ?')))
-// console.log(kebabCase('  why are  there   so many  spaces     in  this sentence    ?'))
-// console.log(snakeCase('  why are  there   so many  spaces     in  this sentence    ?'))
-// console.log(camelCase('  why are  there   so many  spaces     in  this sentence    ?'))
-// console.log(shift('it really is a beautiful day today'))
-// console.log(capitalizeWords(shift('it really is a beautiful day today')))
+//here's two functions on the same string
+console.log(capsFirstLtr(removeExtraSpaces('  why are  there   so many  spaces     in  this sentence    ?')))
+console.log(kebabCase('  why are  there   so many  spaces     in  this sentence    ?'))
+console.log(snakeCase('  why are  there   so many  spaces     in  this sentence    ?'))
+console.log(camelCase('  why are  there   so many  spaces     in  this sentence    ?'))
+console.log(shift('it really is a beautiful day today'))
+console.log(capitalizeWords(shift('it really is a beautiful day today')))
