@@ -8,7 +8,7 @@ function() {
     return cFL(this)
 }
 module.exports.cFL = cFL
-console.log()
+console.log(cFL('what time is it?'))
 // challenge 2
 
 const caps = function(str) {
@@ -19,7 +19,7 @@ function() {
     return caps(this)
 }
 module.exports.caps = caps 
-
+console.log(caps('this sentence should totally be in caps'))
 // challenge 3
 // note: /\w\S*/g is a REGEX (regular expression).
 // the \s means "match whitespace" and the g is a flag which means "global", i.e. match all whitespace, not just the first.
@@ -34,7 +34,7 @@ function() {
     return cW(this)
     }
 module.exports.cW = cW
- 
+console.log(cW('this sentence should have all its words capitalized')) 
 // challenge 4
 const remXsp = function(str) {
     return str.replace(/\s+/g,' ').trim();
@@ -44,9 +44,9 @@ function() {
     return remXsp(this)        
     }                                                                                                                                                                                                                                                                               
 module.exports.remXsp = remXsp
-                      
+console.log(remXsp('  what   is up      with   all the    extra    space ?'))
 
-// Challenge                                       5 kabobCase - Removes extra spaces, replaces spaces with hyphens, removes special characters
+// Challenge 5 kabobCase - Removes extra spaces, replaces spaces with hyphens, removes special characters
 
 const kC  = function(str) {
     return str && str.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g).map(x => x.toLowerCase()).join('-');
@@ -56,7 +56,7 @@ String.prototype.kC =
        return kC(this)
    }
 module.exports.kC = kC
-
+console.log(kC('kabob case is so named because it looks like a shish kebab skewer'))
 // // Challenge 6 snakeCase 
 // // Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase, and removes special characters
 
@@ -68,7 +68,7 @@ String.prototype.sC =
         return sC(this)
 }
 module.exports.sC = sC
-
+console.log(sC('snake case is called snake case because it is reminiscent of a snake'))
 // Challenge 7 camelCase() - Lowercases the first character of the first word. 
 // Then uppercases the first character of all other words, and removes all spaces.
 
@@ -82,7 +82,7 @@ String.prototype.cC = function() {
     return cC(this)
 }
 module.exports.cC = cC
-
+console.log(cC('CamelCase is so named because it looks like a camels humps'))
 // Challenge 8 shift() - this method will take the first character of a string 
 // and move to the end of a string:
 
@@ -93,5 +93,5 @@ const sft = function(str) {
      return sft(this)
 }
 module.exports.sft = sft
-
+console.log(sft('this is going to shift the first letter of each word to the end of each word and the last letter to the front'))
 
