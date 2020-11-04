@@ -4,7 +4,7 @@
 
 ![tests](https://img.shields.io/badge/Jest-1.3.0-brightgreen/style=plastic)
 
-## npm package can be found at: https://www.npmjs.com/package/@gscrawley/string-lib
+## npm package can be found at: https://www.npmjs.com/package/my-string-lib
 
 ## String_Lib
 
