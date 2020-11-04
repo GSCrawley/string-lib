@@ -1,8 +1,7 @@
-![GitHub package.json version](https://img.shields.io/badge/version-1.2.0-brightgreen/style=plastic)
+![GitHub package.json version](https://img.shields.io/badge/version-2.0.0-brightgreen/style=plastic)
 
-![tests](https://img.shields.io/static/v1?label=Testing&message=Jest&color=ff69b4&style=plastic)
+![tests](https://img.shields.io/badge/all%20tests-passing-brightgreen&style=plastic)
 
-## All tests passing
 
 ## String_Lib
 
