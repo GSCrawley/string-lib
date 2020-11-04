@@ -2,13 +2,13 @@ const string_test = require('../index')
 
 
 test('capsFirstLtr', () => {
-    expect(string_test.capsFirstLtr('whats up')).toBe('Whats up')
+    expect(string_test.capsFirstLtr("let's capitalize the first letter of this sentence")).toBe("Let's capitalize the first letter of this sentence")
     
 })
 
 
 test('allCaps', () => {
-    expect(string_test.allCaps('whats up')).toBe('WHATS UP')
+    expect(string_test.allCaps('it really is a beautiful day today')).toBe('IT REALLY IS A BEAUTIFUL DAY TODAY')
     
 })
 
@@ -18,7 +18,7 @@ test('capitalizeWords', () => {
 })
 
 test('removeExtraSpaces', () => {
-    expect(string_test.removeExtraSpaces('  why are  there   so many  spaces     in  this sentence?')).toBe('why are there so many spaces in this sentence?')
+    expect(string_test.removeExtraSpaces('  why are  there   so many  spaces     in  this sentence    ?')).toBe('why are there so many spaces in this sentence?')
 
 })
 

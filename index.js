@@ -31,7 +31,7 @@ String.prototype.capitalizeWords = function() {
 // challenge 4
 
 String.prototype.removeExtraSpaces = function() {
-    return this.replace(/\s+/g,' ').trim();
+    return this.replace(/\s+/g,'').trim();
 }
 const rES = "  why are  there   so many  spaces     in  this sentence    ?"
 console.log(rES.removeExtraSpaces());
