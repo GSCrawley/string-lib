@@ -1,87 +1,97 @@
 
 // challenge 1
-
-String.prototype.capsFirstLtr = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1); 
+const cFL = function(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1); 
 }
-const cFL = "let's capitalize the first letter of this sentence";
-console.log(cFL.capsFirstLtr());
-
+String.prototype.cFL = 
+function() {
+    return cFL(this)
+}
+module.exports.cFL = cFL
+console.log()
 // challenge 2
 
-String.prototype.allCaps = function() {
-    return this.toUpperCase(' ');
+const caps = function(str) {
+    return str.toUpperCase();
 }
-const aC ="it really is a beautiful day today";
-console.log(aC.allCaps());
+String.prototype.caps = 
+function() {
+    return caps(this)
+}
+module.exports.caps = caps 
 
 // challenge 3
 // note: /\w\S*/g is a REGEX (regular expression).
 // the \s means "match whitespace" and the g is a flag which means "global", i.e. match all whitespace, not just the first.
 
-String.prototype.capitalizeWords = function() {
-    return this.replace(/\w\S*/g,function(txt){
+const cW = function(str) {
+    return str.replace(/\w\S*/g,function(txt){
         return txt.charAt(0).toUpperCase()+txt.substr(1).toLowerCase();
         });
- }
-
- const cW = "now this is going to capitalize all words in the sentence";
- console.log(cW.capitalizeWords());
-
+    }
+String.prototype.cW =  
+function() {
+    return cW(this)
+    }
+module.exports.cW = cW
+ 
 // challenge 4
-
-String.prototype.removeExtraSpaces = function() {
-    return this.replace(/\s+/g,'').trim();
+const remXsp = function(str) {
+    return str.replace(/\s+/g,' ').trim();
 }
-const rES = "  why are  there   so many  spaces     in  this sentence    ?"
-console.log(rES.removeExtraSpaces());
+String.prototype.remXsp = 
+function() {
+    return remXsp(this)        
+    }                                                                                                                                                                                                                                                                               
+module.exports.remXsp = remXsp
+                      
 
+// Challenge                                       5 kabobCase - Removes extra spaces, replaces spaces with hyphens, removes special characters
 
-// Challenge 5 kabobCase - Removes extra spaces, replaces spaces with hyphens, removes special characters
+const kC  = function(str) {
+    return str && str.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g).map(x => x.toLowerCase()).join('-');
+} ;
+String.prototype.kC =
+   function() {
+       return kC(this)
+   }
+module.exports.kC = kC
 
-String.prototype.kebabCase = function() {
-    return this && this.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g).map(x => x.toLowerCase()).join('-');
-} 
-const kC = rES
-console.log(kC.kebabCase())
-// Challenge 6 snakeCase 
-// Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase, and removes special characters
+// // Challenge 6 snakeCase 
+// // Removes extra space and replaces spaces with an underscore "_", and makes all characters lowercase, and removes special characters
 
-String.prototype.snakeCase = function() {
-    return this && this.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g).map(x => x.toLowerCase()).join('_');
+const sC = function(str) {
+    return str && str.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g).map(x => x.toLowerCase()).join('_');
+};
+String.prototype.sC = 
+    function() {
+        return sC(this)
 }
-const sC = rES
-console.log(kC.snakeCase())
+module.exports.sC = sC
 
 // Challenge 7 camelCase() - Lowercases the first character of the first word. 
 // Then uppercases the first character of all other words, and removes all spaces.
 
-String.prototype.camelCase = function() {
-    return this
-         .replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
-         .replace(/\s/g, '')
-         .replace(/^(.)/, function($1) { return $1.toLowerCase(); });
+const cC = function(str) {
+    return str
+          .replace(/\s(.)/g, function($1) { return $1.toUpperCase(); })
+          .replace(/\s/g, '')
+          .replace(/^(.)/, function($1) { return $1.toLowerCase(); });
+ }
+String.prototype.cC = function() {
+    return cC(this)
 }
-
-const cC = rES
-console.log(cC.camelCase())
+module.exports.cC = cC
 
 // Challenge 8 shift() - this method will take the first character of a string 
 // and move to the end of a string:
 
-String.prototype.shift = function() {
-    return this.split(' ').map(e=>  e.substr(1,) +e[0]).join(' ')
+const sft = function(str) {
+    return str.split(' ').map(e=>  e.substr(1,) +e[0]).join(' ')
+ }
+ String.prototype.sft = function() {
+     return sft(this)
 }
+module.exports.sft = sft
 
-const sft = aC
-console.log(sft.shift())
-
-module.exports.capsFirstLtr = this.capsFirstLtr
-module.exports.allCaps = this.allCaps
-module.exports.capitalizeWords = this.capitalizeWords
-module.exports.removeExtraSpaces = this.removeExtraSpaces
-module.exports.kebabCase = this.kebabCase
-module.exports.snakeCase = this.snakeCase
-module.exports.camelCase = this.camelCase
-module.exports.shift = this.shift
 
